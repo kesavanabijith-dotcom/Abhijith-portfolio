@@ -1,5 +1,7 @@
-function sayHello() {
+// Toggle Mobile Menu
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-  alert("Thanks for visiting my portfolio! Let's connect soon.");
-
-}
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
